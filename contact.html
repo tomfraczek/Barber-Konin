@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="https://use.fontawesome.com/d90a2fd167.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script>
+    $(window).scroll(function(e){
+      parallax();
+    });
+
+    function parallax(){
+      var scrolled = $(window).scrollTop();
+      $('.contact-picture').css('background-position-y',-(scrolled*0.30)+'px');
+    }
+
+    $( '.js-input' ).keyup(function() {
+  if( $(this).val() ) {
+     $(this).addClass('not-empty');
+  } else {
+     $(this).removeClass('not-empty');
+  }
+});
+    </script>
+
+  </head>
+  <body>
+    <div class="logo-holder">
+      <div>
+        <a class="navbar-brand" id="brand" href="#">Zakład Fryzjerski Damski i Męski
+        <hr>
+        +48 544 485 555</a>
+      </div>
+      <div class="social">
+        Konin ul. Spółdzielców 19<br/>
+        <a href="https://www.instagram.com"><img src="img/instagram.png"></a>
+        <a href="http://www.facebook.com"><img src="img/facebook.png"></a>
+        <a href="http://www.twitter.com"><img src="img/twitter-logo.png"></a>
+      </div>
+    </div>
+    <nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">start</a></li>
+        <li><a href="woman.html">dla niej</a></li>
+        <li><a href="man.html">dla niego</a></li>
+        <li><a href="service.html">usługi</a></li>
+        <li class="active current"><a href="contact.html">kontakt<span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div class="contact-picture"></div>
+
+
+<section class="main-content">
+
+  <div class="contact-content">
+<h1>Kontakt</h1>
+<p>Użyj formularza kontaktowego lub napisz maila na adres <a href="mailto:adres e-mail">zaklad@fryzjer.pl</a>.</p>
+<p>Możesz odwiedzić nas osobiście. Nasz zakład mieści się przy ul Spółdzielców 19 w Koninie.</p>
+       <form class="contact-form row">
+          <div class="form-field col x-50">
+             <input id="name" class="input-text js-input" type="text" required>
+             <label class="label" for="name">Imię</label>
+          </div>
+          <div class="form-field col x-50">
+             <input id="email" class="input-text js-input" type="email" required>
+             <label class="label" for="email">E-mail</label>
+          </div>
+          <div class="form-field col x-100">
+             <input id="message" class="input-text js-input" type="text" required>
+             <label class="label" for="message">Wiadomość</label>
+          </div>
+          <div class="form-field col x-100 align-center">
+             <input class="submit-btn" type="submit" value="Wyślij">
+          </div>
+       </form>
+  </div>
+
+
+</section>
+
+
+
+<footer>
+
+  <div class="container">
+    <div class="row hold">
+      <div class="col-md-4">
+        <div class="address one">
+          <h1>Nasz salon</h1>
+          <p>Ul.Spółdzielców 104, Konin</p>
+            <p>+48 123 125 555</p>
+            <p>zaklad@fryzjer.pl</p>
+            <p>www.zakladfryzjer.pl</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="hours one">
+          <h1>Godziny otwarcia</h1>
+          <p>Pn-Pt 09:00 - 17:00</p>
+          <p>Sob 09:00 - 14:00</p>
+          <p>Niedz - NIECZYNNE</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="address one">
+          <h1>Znajdz nas<h1>
+            <a href="https://www.instagram.com"><img src="img/instagram.png"></a>
+            <a href="http://www.facebook.com"><img src="img/facebook.png"></a>
+            <a href="http://www.twitter.com"><img src="img/twitter-logo.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 ">
+        <p class="text-center">Made by Tom Fraczek, &copy; 2017</p>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+  </body>
+</html>
